@@ -124,7 +124,7 @@ DecrError decryptData(void *buffer, uint32_t *bufferSize, void *outputBuffer, vo
     return DD_OK;
 }
 
-ulong countCrc(FILE *f, uint32_t hdrSize)
+uLong countCrc(FILE *f, uint32_t hdrSize)
 {
     void *buffer = malloc(0x1000);
     uLong crc = crc32(0L, Z_NULL, 0);
